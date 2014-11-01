@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<actions>
+	<action>
+		<actionName>CUSTOM-Run with Spring Boot</actionName>
+		<displayName>Run with Spring Boot</displayName>
+		<goals>
+			<goal>spring-boot:run</goal>
+		</goals>
+	</action>
+	<action>
+		<actionName>CUSTOM-Debug with Spring Boot</actionName>
+		<displayName>Debug with Spring Boot</displayName>
+		<goals>
+			<goal>spring-boot:run</goal>
+		</goals>
+		<activatedProfiles>
+			<activatedProfile>spring-boot-maven-plugin-debug</activatedProfile>
+		</activatedProfiles>
+	</action>
+</actions>
