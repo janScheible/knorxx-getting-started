@@ -54,8 +54,16 @@
 						<groupId>org.springframework.boot</groupId>
 						<artifactId>spring-boot-maven-plugin</artifactId>
 						<configuration>
+							<!--
+								Together with that small patch of the mvn.bat this allows full integration of Sptring Boot in Netbeans:
+									@REM Little hack to allow a seamless debugging experience of Spring Boot applications in Netbeans :-)
+									if "%SPRING_BOOT_DEBUGGING%" == "true"  (
+										SET "SPRING_BOOT_DEBUG_OPTS=%MAVEN_OPTS%"
+										SET "MAVEN_OPTS="
+									)
+							-->
 							<jvmArguments>
-								-Xdebug -Xrunjdwp:transport=dt_socket,server=y,suspend=y,address=4321
+								${env.SPRING_BOOT_DEBUG_OPTS}
 							</jvmArguments>
 						</configuration>				
 					</plugin>
