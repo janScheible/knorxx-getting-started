@@ -80,11 +80,14 @@
 			<artifactId>jquery-ui-bridge</artifactId>
 			<version>1.0.0</version>
 		</dependency>
+		<!-- st-js support for Java 8 -->
 		<dependency>
 			<groupId>org.st-js</groupId>
 			<artifactId>stjs-generator-plugin-java8</artifactId>
 			<version>3.0.1-knorxx</version>
-		</dependency>         		
+		</dependency>
+		
+		<!-- JSP rendering support -->
 		<dependency>
 			<groupId>org.apache.tomcat.embed</groupId>
 			<artifactId>tomcat-embed-jasper</artifactId>
