@@ -2,6 +2,8 @@
 
 This repository allows getting started with the Knorxx Framework very easily. After cloning the repository the project can be opened in Netbeans 8 (version 8 is needed for the Java 8 support). The getting started project uses Spring Boot and therefore must be started by running Maven with `spring-boot:run`. The project also contains a predefined custom action for that which is called 'Run with Spring Boot'.
 
+**Note:** At runtime st-js needs tools.jar of the JDK. The easiest way to make it available is to copy tools.jar from ```$JDK_HOME/lib/tools.jar``` to ```$JDK_HOME/jre/lib/ext```.
+
 After the embedded Tomcat ([localhost:8080/knorxx/page/GettingStartedWebPage.html](http://localhost:8080/knorxx/page/GettingStartedWebPage.html)) finished starting the class `GettingStartedWebPage` can be edited and changes are immediately visible after a reload in the browser. For more information about how to write the Java code which can be translated to JavaScript see [Writing ST-JS code].
 
 [Writing ST-JS code]: http://st-js.github.io/reference.html#writing
