@@ -25,4 +25,12 @@
 			<activatedProfile>spring-boot-maven-plugin-debug</activatedProfile>
 		</activatedProfiles>
 	</action>
+	<action>
+            <actionName>CUSTOM-Spring Boot Package</actionName>
+            <displayName>Spring Boot Package</displayName>
+            <goals>
+                <goal>package</goal>
+                <goal>spring-boot:repackage</goal>
+            </goals>
+        </action>
 </actions>
